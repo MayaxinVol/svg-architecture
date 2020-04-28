@@ -1,0 +1,137 @@
+body {
+    background-color: #1a1a1d;
+}
+
+circle:hover {
+    r: 12;
+    cursor: pointer;
+}
+
+rect:hover {
+    r: 12;
+    cursor: pointer;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+}
+
+.w3-sidebar {
+    width: 210px !important;
+}
+
+.tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.board {
+    font-family: sans-serif;
+    font-size: 15px;
+}
+
+.board1, .board2 {
+    color: black;
+}
+
+.w3-button {
+    white-space: pre;
+}
+
+.w3-button.fuColor {
+    font-weight: bold;
+    background-color: #f4b183;
+}
+
+.w3-button.cuColor {
+    font-weight: bold;
+    background-color: #8faadc;
+}
+
+.w3-button.rcColor {
+    font-weight: bold;
+    background-color: #767171;
+}
+
+.w3-button.unitStyle {
+    padding: 7px 8px 7px 8px !important;
+    font-weight: bold;
+    font-size: 7px;
+    color: black;
+    background-color: #ffd966;
+}
+
+.w3-button.fileStyle {
+    padding: 7px 14px 7px 13px !important;;
+    font-weight: bold;
+    font-size: 7px;
+    color: black;
+    background-color: #a9d18e;
+}
+
+.btnMargin {
+    padding-top: 15px;
+}
+
+.w3-button.global {
+    margin: 5px auto 5px auto;
+    width: 100%;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #64b183;
+}
+
+
+.w3-bar-item {
+    width: 29% !important;
+}
+
+.hide {
+    display: none;
+}
+
+.marginRight {
+    padding-top: 10px !important;
+}
+
+.emptyBox {
+    padding-top: 10px !important;
+}
+
+.w3-button.emptyStyle {
+    padding: 7px 8px 7px 8px !important;
+    font-weight: bold;
+    font-size: 12px;
+    color: white;
+    background-color: #334fff;
+}
